@@ -4,7 +4,7 @@
   "description": "A basic to-do lists",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --coverage",
     "start": "webpack serve --open",
     "dev": "webpack --mode=development",
     "build": "webpack --mode=production",
@@ -32,6 +32,7 @@
     "eslint-plugin-import": "^2.26.0",
     "hint": "^7.1.1",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^29.0.1",
     "style-loader": "^3.3.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
