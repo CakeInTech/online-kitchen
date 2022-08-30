@@ -56,7 +56,15 @@ To get a local copy up and running follow these simple example steps.
 - [Twitter](https://twitter.com/MohamedCK0)
 - [LinkedIn](https://www.linkedin.com/in/mohamed-abdulhakim-2868521b6/)
 
-Please feel free to contact me anytime
+👤 **Suzana Marsela**
+
+> Full-Stack Developer, Stack: JavaScript | Python | C | Ruby and Rails | React Native Developer | Redux. Looking forward to new jobs and opportunities.
+
+- [GitHub](https://github.com/Suzi216)
+- [Twitter](https://twitter.com/suzanamarsela)
+- [LinkedIn](https://tr.linkedin.com/in/suzana-marsela-674900154)
+
+Please feel free to contact us anytime
 
 ## Show your support
 
