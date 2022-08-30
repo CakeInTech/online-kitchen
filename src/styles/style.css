@@ -1,3 +1,70 @@
-.greeting {
-  color: blue;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 5px 20px;
+  background-color: #587b7f;
+}
+
+.social-links i {
+  font-size: 20px;
+  margin-right: 5px;
+  margin-left: 25px;
+  color: white;
+}
+
+header {
+  display: flex;
+  background-color: #393e41;
+  align-items: center;
+  line-height: 90px;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo p {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 800;
+  color: white;
+  font-size: 23px;
+}
+
+.logo span {
+  color: #e2c044;
+}
+
+.desktop-nav {
+  display: inline-flex;
+  overflow: hidden;
+  gap: 30px;
+}
+
+.desktop-nav a {
+  font-family: 'Libre Baskerville', serif;
+  text-decoration: none;
+  color: #fff;
+}
+
+.desktop-nav a:hover {
+  color: #e2c044;
+}
+
+.footer-content {
+  font-size: x-large;
+  color: whitesmoke;
+  background-color: #1e2019;
+}
+
+.footer-text {
+  /* You can add your fonts and text settings here To CAKE ----> from TINAYE */
+  margin-left: 1em;
 }
