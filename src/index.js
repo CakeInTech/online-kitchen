@@ -1,7 +1,5 @@
 import './styles/style.css';
 import './styles/homePageContentStyles.css';
+import displayMainPage from './modules/displayMainPage';
 
-document.addEventListener('DOMContentLoaded', () => {
-  const greeting = document.querySelector('.greeting');
-  greeting.innerHTML = 'Hello World';
-});
+displayMainPage();
