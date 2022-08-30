@@ -1,0 +1,44 @@
+.food-card {
+  width: 20%;
+  display: inline-block;
+  margin: 6%;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.food-card > img {
+  width: 100%;
+}
+
+.food-description {
+  display: inline-block;
+  width: 75%;
+}
+
+.food-details-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.like-icon-counter {
+  width: 25%;
+  display: inline-block;
+}
+
+.like-button,
+.like-counter {
+  text-align: center;
+}
+
+.like-button {
+  display: block;
+  margin-top: 1em;
+}
+
+.popup-buttons {
+  margin: auto;
+  width: 50%;
+  display: block;
+  height: 3em;
+  margin-bottom: 2em;
+}
