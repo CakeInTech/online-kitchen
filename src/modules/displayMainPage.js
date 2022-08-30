@@ -1,3 +1,5 @@
+import { revervationPopup } from './reservationPopup.js';
+
 const BASE_URL = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=';
 const foodArray = [52772, 52953, 52853, 52870, 52765, 52813];
 const foodContaier = document.querySelector('.card-container');
@@ -25,10 +27,13 @@ const displayMainPage = async () => {
           </div>
           <div class="comments-reservations">
             <button type="button" class="reservation-button popup-buttons">Comments</button>
+            <button type="button" class="reservation-btn popup-buttons">Reservation</button>
           </div>
         </div>
     `;
   });
+  /// display the reservation popup
+  revervationPopup(totalFoodies);
 };
 
 export default displayMainPage;
