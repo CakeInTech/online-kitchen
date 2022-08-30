@@ -1,0 +1,32 @@
+.img-x{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  padding: 1%;
+}
+.rever-description{
+  text-align: center;
+}
+.reser-button{
+  font-size: 50px;
+  margin: 0;
+  padding-right: 5%;
+}
+.resev-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.reserv-img{
+  height: auto;
+  padding-right: 5%;
+  width: 30%;
+}
+.revervation-card{
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
