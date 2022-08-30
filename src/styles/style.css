@@ -4,8 +4,8 @@
 
 .footer-content {
   font-size: x-large;
-  border: solid;
-  color: black;
+  color: whitesmoke;
+  background-color: #1e2019;
 }
 
 .footer-text {
