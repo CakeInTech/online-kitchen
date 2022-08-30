@@ -1,10 +1,10 @@
 const foodContaier = document.querySelector('.card-container');
 
-export const revervationPopup= (totalFoodies) =>{
-  const reset=document.querySelectorAll(".reservation-btn");
-  reset.forEach((btn,index) =>{
-    btn.addEventListener("click", ()=>{
-      foodContaier.innerHTML='';
+export const revervationPopup = (totalFoodies) => {
+  const reset = document.querySelectorAll('.reservation-btn');
+  reset.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      foodContaier.innerHTML = '';
       foodContaier.innerHTML += `
           <div class="revervation-card">
             <div class="img-x">
@@ -19,5 +19,5 @@ export const revervationPopup= (totalFoodies) =>{
         </div>
       `;
     });
-  })
-}
+  });
+};
