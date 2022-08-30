@@ -1,4 +1,5 @@
 import { revervationPopup } from './reservationPopup.js';
+import { commentPopup } from './commentPopup.js';
 
 const BASE_URL = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=';
 const foodArray = [52772, 52953, 52853, 52870, 52765, 52813];
@@ -34,6 +35,9 @@ const displayMainPage = async () => {
   });
   /// display the reservation popup
   revervationPopup(totalFoodies);
+
+  // display the comment popup
+  commentPopup(totalFoodies);
 };
 
 export default displayMainPage;

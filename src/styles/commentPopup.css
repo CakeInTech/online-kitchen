@@ -1,0 +1,37 @@
+.comment-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(247, 249, 252, 0.863);
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.763);
+  width: fit-content;
+  font-family: 'Libre Baskerville', serif;
+  margin: 100px auto;
+  height: 70vh;
+}
+
+.comment-img {
+  width: 600px;
+  height: 600px;
+  border-radius: 1%;
+}
+
+.comment-button {
+  position: absolute;
+  font-family: sans-serif;
+  color: grey;
+  padding: 17px 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.763);
+  border-radius: 50%;
+}
+
+.img-x {
+  padding: 0;
+  height: 35vh;
+  overflow: hidden;
+}
