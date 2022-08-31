@@ -1,6 +1,7 @@
 import { revervationPopup } from './reservationPopup.js';
 import likeButtonsListener from './eventHandlers.js';
 import { getLikes } from './diplayLikes.js';
+import { commentPopup } from './commentPopup.js';
 
 const BASE_URL = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=';
 const foodArray = [52853, 52953, 52772, 52813, 52765, 52870];
@@ -41,8 +42,12 @@ const displayMainPage = async () => {
   });
   /// display the reservation popup
   revervationPopup(totalFoodies);
+
   // load the like buttons
   likeButtonsListener();
+
+  // display the comment popup
+  commentPopup(totalFoodies);
 };
 
 export default displayMainPage;
