@@ -42,45 +42,45 @@
 }
 
 .popnav {
-    margin: 20px;
-    padding: 12px;
-    display: flex;
-    gap: 200px;
+  margin: 20px;
+  padding: 12px;
+  display: flex;
+  gap: 200px;
 }
 
 .popnav-link {
-    text-decoration: none;
-    color: lightgray;
-    font-family: sans-serif;
+  text-decoration: none;
+  color: lightgray;
+  font-family: sans-serif;
 }
 
 .former {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    height: 40vh;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 40vh;
 }
 
 .former form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  gap: 20px;
 }
 
 input[type="text"] {
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 input[type="button"] {
-    padding: 10px 20px;
-    background-color: #e2c044;
-    color: #1e2019;
-    border-radius: 1%;
-    border: none;
-    cursor: pointer;
+  padding: 10px 20px;
+  background-color: #e2c044;
+  color: #1e2019;
+  border-radius: 1%;
+  border: none;
+  cursor: pointer;
 }
 
 .overflow {
