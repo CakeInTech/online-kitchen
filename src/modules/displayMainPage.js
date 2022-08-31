@@ -1,6 +1,7 @@
 import { revervationPopup } from './reservationPopup.js';
 import likeButtonsListener from './eventHandlers.js';
 import { getLikes } from './diplayLikes.js';
+import displayItemsCounter from './displayItemsCounter.js';
 
 const BASE_URL = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=';
 const foodArray = [52853, 52953, 52772, 52813, 52765, 52870];
@@ -43,6 +44,8 @@ const displayMainPage = async () => {
   revervationPopup(totalFoodies);
   // load the like buttons
   likeButtonsListener();
+  // Load the total items;
+  displayItemsCounter();
 };
 
 export default displayMainPage;
