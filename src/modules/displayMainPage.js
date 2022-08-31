@@ -20,8 +20,6 @@ const displayMainPage = async () => {
   const totalFoodies = await Promise.all(promises);
   let counter = 0;
 
-  console.log(totalLikes.length);
-
   totalFoodies.forEach((item) => {
     foodContaier.innerHTML += `
         <div class="food-card">
@@ -51,7 +49,7 @@ const displayMainPage = async () => {
 
   // Load the total items
   // Subtracted two undefined pushes when first building the API
-  displayItemsCounter(totalLikes.length-2);
+  displayItemsCounter(totalLikes.length - 2);
 
   // display the comment popup
   commentPopup(totalFoodies);
