@@ -1,5 +1,6 @@
 import { revervationPopup } from './reservationPopup.js';
 import likeButtonsListener from './eventHandlers.js';
+import { getLikes } from './diplayLikes.js';
 
 const BASE_URL = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=';
 const foodArray = [52772, 52953, 52853, 52870, 52765, 52813];
@@ -13,8 +14,11 @@ const displayMainPage = async () => {
     return json.meals;
   });
 
+  const totalLikes = await getLikes();
   const totalFoodies = await Promise.all(promises);
   let counter = 0;
+
+  console.log(totalLikes[counter].likes);
 
   totalFoodies.forEach((item) => {
     foodContaier.innerHTML += `
@@ -26,7 +30,9 @@ const displayMainPage = async () => {
               <span class="like-button" id="${foodArray[counter]}">
                 <i class="fa fa-heart fa-2x like-icon"></i>
               </span>
-              <p class="like-counter">5</p>
+              <p class="like-counter">
+                ${totalLikes[counter].likes}
+              </p>
             </div>
           </div>
           <div class="comments-reservations">

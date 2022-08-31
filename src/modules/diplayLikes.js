@@ -4,7 +4,7 @@ const BASE_URL = 'https://us-central1-involvement-api.cloudfunctions.net/capston
 const getLikes = async () => {
   const response = await fetch(`${BASE_URL + INVOLVEMENT_API_ID}/likes`);
   const getLikesData = await response.json();
-  console.log(getLikesData);
+  return getLikesData;
 };
 
 const setLikes = async (likeButtonID) => {
