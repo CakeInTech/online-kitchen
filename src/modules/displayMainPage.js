@@ -46,7 +46,7 @@ const displayMainPage = async () => {
 
   // load the like buttons
   likeButtonsListener();
-  
+
   // Load the total items;
   displayItemsCounter();
 
