@@ -1,37 +1,55 @@
 .comment-card {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(247, 249, 252, 0.863);
+  background: white;
   border: 1px solid #ccc;
-  border-radius: 3px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.763);
-  width: fit-content;
+  border-radius: 2.5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.763);
+  padding: 20px 20px;
   font-family: 'Libre Baskerville', serif;
-  margin: 100px auto;
-  height: 70vh;
+  height: 90vh;
+  z-index: 10;
 }
 
 .comment-img {
-  width: 600px;
-  height: 600px;
-  border-radius: 1%;
+  width: 37.5rem;
+  height: 37.5rem;
+  border-radius: 2.5%;
+  border: lightgray 1px solid;
 }
 
 .comment-button {
   position: absolute;
   font-family: sans-serif;
   color: grey;
-  padding: 17px 20px;
+  padding: 14px 20px;
   margin-top: 20px;
   margin-right: 20px;
   background-color: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.763);
   border-radius: 50%;
+  font-weight: 800;
 }
 
 .img-x {
   padding: 0;
-  height: 35vh;
+  height: 40vh;
   overflow: hidden;
+}
+
+.overflow {
+  background-color: rgba(88, 123, 127, 0.5);
+  backdrop-filter: blur(8px);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }

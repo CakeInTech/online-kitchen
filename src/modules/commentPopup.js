@@ -1,9 +1,12 @@
-const container = document.querySelector('.card-container');
+const container = document.querySelector('.modal-container');
 
 export const commentPopup = (totalFoodies) => {
   const cmt = document.querySelectorAll('.reservation-button');
+  const overflow = document.querySelector('.overflow');
   cmt.forEach((btn, index) => {
     btn.addEventListener('click', () => {
+      overflow.style.display = 'block';
+      overflow.style.position = 'fixed';
       container.innerHTML = '';
       container.innerHTML += `
             <div class="comment-card">
@@ -18,6 +21,13 @@ export const commentPopup = (totalFoodies) => {
                 </div>
             </div>
         `;
+      const reset = document.querySelectorAll('.comment-button');
+      reset.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          overflow.style.display = 'none';
+          container.innerHTML = '';
+        });
+      });
     });
   });
 };
