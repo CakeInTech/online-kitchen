@@ -1,8 +1,11 @@
 import { revervationPopup } from './reservationPopup.js';
+import likeButtonsListener from './eventHandlers.js';
+import { getLikes } from './diplayLikes.js';
 import { commentPopup } from './commentPopup.js';
 
+
 const BASE_URL = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=';
-const foodArray = [52772, 52953, 52853, 52870, 52765, 52813];
+const foodArray = [52853, 52953, 52772, 52813, 52765, 52870];
 const foodContaier = document.querySelector('.card-container');
 
 const displayMainPage = async () => {
@@ -13,7 +16,9 @@ const displayMainPage = async () => {
     return json.meals;
   });
 
+  const totalLikes = await getLikes();
   const totalFoodies = await Promise.all(promises);
+  let counter = 0;
 
   totalFoodies.forEach((item) => {
     foodContaier.innerHTML += `
@@ -22,8 +27,10 @@ const displayMainPage = async () => {
           <div class="food-details-flex">
             <p class="food-description">${item[0].strMeal}</p>
             <div class="like-icon-counter">
-              <span class="like-button">X</span>
-              <p class="like-counter">5</p>
+              <span class="like-button" id="${foodArray[counter]}">
+                <i class="fa fa-heart fa-2x like-icon"></i>
+              </span>
+              <p class="like-counter">${totalLikes[counter].likes}</p>
             </div>
           </div>
           <div class="comments-reservations">
@@ -32,10 +39,14 @@ const displayMainPage = async () => {
           </div>
         </div>
     `;
+    counter += 1;
   });
   /// display the reservation popup
   revervationPopup(totalFoodies);
-
+  
+  // load the like buttons
+  likeButtonsListener();
+  
   // display the comment popup
   commentPopup(totalFoodies);
 };
