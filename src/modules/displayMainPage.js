@@ -39,6 +39,7 @@ const displayMainPage = async () => {
   });
   /// display the reservation popup
   revervationPopup(totalFoodies);
+  // load the like buttons
   likeButtonsListener();
 };
 
