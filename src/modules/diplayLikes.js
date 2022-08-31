@@ -18,7 +18,6 @@ const setLikes = async (likeButtonID) => {
     },
   });
   const getID = await response.text();
-  console.log(getID);
   return getID;
 };
 
