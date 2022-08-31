@@ -21,7 +21,9 @@ const displayMainPage = async () => {
           <div class="food-details-flex">
             <p class="food-description">${item[0].strMeal}</p>
             <div class="like-icon-counter">
-              <span class="like-button">X</span>
+              <span class="like-button">
+                <i class="fa fa-heart fa-2x like-icon"></i>
+              </span>
               <p class="like-counter">5</p>
             </div>
           </div>

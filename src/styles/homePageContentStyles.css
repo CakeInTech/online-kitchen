@@ -30,9 +30,15 @@
   text-align: center;
 }
 
+.like-counter {
+  font-size: x-large;
+  color: #587b7f;
+  font-family: 'Libre Baskerville', serif;
+}
+
 .like-button {
   display: block;
-  margin-top: 1em;
+  margin: 0.25em;
 }
 
 .popup-buttons {
@@ -41,4 +47,8 @@
   display: block;
   height: 3em;
   margin-bottom: 2em;
+}
+
+.like-icon {
+  color: #587b7f;
 }
