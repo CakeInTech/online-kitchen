@@ -65,6 +65,8 @@ header {
 }
 
 .footer-text {
-  /* You can add your fonts and text settings here To CAKE ----> from TINAYE */
+  padding: 1.5em;
+  font-size: x-large;
+  font-family: cursive;
   margin-left: 1em;
 }
