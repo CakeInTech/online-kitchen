@@ -1,0 +1,11 @@
+.displayReserv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 3%;
+}
+.theform{
+  align-content: center;
+}
