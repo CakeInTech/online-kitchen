@@ -1,3 +1,8 @@
+.main-section {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
 .food-card {
   width: 20%;
   display: inline-block;
@@ -8,11 +13,15 @@
 
 .food-card > img {
   width: 100%;
+  border-radius: 2em;
 }
 
 .food-description {
   display: inline-block;
   width: 75%;
+  font-family: cursive;
+  color: #587b7f;
+  font-size: medium;
 }
 
 .food-details-flex {
