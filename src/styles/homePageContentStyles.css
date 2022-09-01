@@ -48,6 +48,7 @@
 .like-button {
   display: block;
   margin: 0.25em;
+  cursor: pointer;
 }
 
 .popup-buttons {
@@ -55,9 +56,38 @@
   width: 50%;
   display: block;
   height: 3em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .like-icon {
   color: #587b7f;
+  transition: 1s ease;
+}
+
+.like-icon:hover {
+  color: red;
+  transform: scale(1.2);
+  transition: 0.5s ease;
+}
+
+.btn-hover {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: cursive;
+  color: #587b7f;
+  cursor: pointer;
+  height: 55px;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  opacity: 1;
+  transition: 1s ease;
+}
+
+.btn-hover:hover {
+  opacity: 0.5;
+  color: red;
+  transform: scale(1.2);
+  transition: 0.5s ease;
 }
