@@ -1,7 +1,6 @@
-const displayItemsCounter = () => {
-  const totalRecipes = document.querySelectorAll('.food-card');
+const displayItemsCounter = (totalScrollls) => {
   const totalRecipesTarget = document.querySelector('.total-recipes-counter');
-  totalRecipesTarget.innerHTML = totalRecipes.length;
+  totalRecipesTarget.innerHTML = totalScrollls;
 };
 
 export default displayItemsCounter;

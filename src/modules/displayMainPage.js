@@ -47,8 +47,9 @@ const displayMainPage = async () => {
   // load the like buttons
   likeButtonsListener();
 
-  // Load the total items;
-  displayItemsCounter();
+  // Load the total items
+  // Subtracted two undefined pushes when first building the API
+  displayItemsCounter(totalLikes.length - 2);
 
   // display the comment popup
   commentPopup(totalFoodies);
