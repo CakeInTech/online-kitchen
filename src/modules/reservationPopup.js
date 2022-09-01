@@ -1,5 +1,6 @@
 const foodContaier = document.querySelector('.card-container');
 import {displayReserv,addReserv} from './displayReserv.js';
+
 export const revervationPopup = (totalFoodies) => {
   const reset = document.querySelectorAll('.reservation-btn');
   reset.forEach((btn, index) => {
@@ -18,9 +19,8 @@ export const revervationPopup = (totalFoodies) => {
             </div>
         </div>
       `;
-      displayReserv(reset,index);
       addReserv(index);
-
+      displayReserv(index);
     });
   });
 };

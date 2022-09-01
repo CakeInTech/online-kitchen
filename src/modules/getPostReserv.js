@@ -1,12 +1,13 @@
-const url='https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/abc789/reservations/';
+const url='https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/XHc1LAodKdqAUny8iXY4/reservations/';
 
 export const getSc = async (ids) => {
 
    const getPath = `?item_id=${ids}`;
    const furl = await fetch(`${url}${getPath}`);
-  const res = await furl.json();
+  const res = await furl.text();
   return res;
 };
+
 export const postScore = async (ids,name,sdate,edate) => {
   const response = await fetch(
     url,
@@ -23,7 +24,7 @@ export const postScore = async (ids,name,sdate,edate) => {
               'Content-type': 'application/json; charset= UTF-8',
             },
     });
-  const result = await response.json();
+  const result = await response.text();
   return result;
 };
 // const result= postScore();

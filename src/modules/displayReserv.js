@@ -1,14 +1,17 @@
 const foodContaier = document.querySelector('.card-container');
 import {getSc,postScore} from './getPostReserv.js';
-
-export const displayReserv =(reset,index)=>{
-   const gets=getSc(index);
-   // console.log(gets);
-   foodContaier.innerHTML+=`<div class="displayReserv"><h1>Reservations</h1> <p>${gets.date_start}- ${gets.date_end} by ${gets.username}</p> </div>`
-
+const ids = [52772, 52953, 52853, 52870, 52765, 52813];
+export const displayReserv =(index)=>{
+   const gets=getSc(ids[index]);
+   console.log(gets);
+   // gets.forEach((item)=>/\{
+     // console.log(item);
+     foodContaier.innerHTML+=`<div class="displayReserv"><h1>Reservations</h1> <p>${gets[0].date_start} - ${gets[0].date_end} by ${gets[0].username}</p> </div>`
+   // })
 }
 
-export const addReserv =(ids) =>{
+export const addReserv =(index) =>{
+
    foodContaier.innerHTML+=`<h2> Add Reservation</h2><form class="theform" action="">
   <label for="fname">Your name</label><br>
   <input type="text" id="fname" class="fname" -name="fname" value=""><br>
@@ -28,6 +31,7 @@ export const addReserv =(ids) =>{
      const enddate=document.querySelector(".edate");
    form.addEventListener('submit',(e)=>{
       e.preventDefault()
-      postScore(ids,name,sdate,edate);
+        postScore(ids[index],name,sdate,edate);
+
    })
 }
