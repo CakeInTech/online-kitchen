@@ -83,6 +83,11 @@ input[type="button"] {
   cursor: pointer;
 }
 
+.comment-button:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
 .overflow {
   background-color: rgba(88, 123, 127, 0.5);
   backdrop-filter: blur(8px);

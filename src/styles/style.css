@@ -4,37 +4,25 @@
   box-sizing: border-box;
 }
 
-.social-links {
-  display: flex;
-  flex-direction: row-reverse;
-  padding: 5px 20px;
-  background-color: #587b7f;
-}
-
-.social-links i {
-  font-size: 20px;
-  margin-right: 5px;
-  margin-left: 25px;
-  color: white;
-}
-
 header {
+  position: absolute;
   display: flex;
-  background-color: #393e41;
   align-items: center;
-  height: 85px;
+  height: 100px;
   justify-content: space-between;
   padding: 0 30px;
+  width: 100%;
 }
 
 .logo {
   display: flex;
+  align-items: center;
 }
 
 .logo p {
   font-family: 'Bodoni Moda', serif;
   font-weight: 800;
-  color: white;
+  color: #fff;
   font-size: 23px;
 }
 
@@ -49,8 +37,9 @@ header {
 }
 
 .desktop-nav a {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Kaushan Script', cursive;
   text-decoration: none;
+  letter-spacing: 7px;
   color: #fff;
 }
 
@@ -65,8 +54,33 @@ header {
 }
 
 .footer-text {
-  padding: 1.5em;
-  font-size: x-large;
+  padding: 1em;
+  opacity: 0.5;
+  font-size: 19px;
   font-family: cursive;
   margin-left: 1em;
+}
+
+.prdesign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+  height: 80vh;
+  background-image: url(../images/banner2.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding-left: 100px;
+}
+
+.bannertxt {
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+}
+
+.recipees {
+  font-family: sans-serif;
+  font-weight: 500;
+  color: #8ca045;
 }

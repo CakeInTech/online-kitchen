@@ -28,6 +28,7 @@ export const commentPopup = (totalFoodies) => {
                   <input id="visitor" type="text" placeholder="Your name" />
                   <input id="comment" type="text" placeholder="Your comments" />
                   <input id="submitter" type="hidden" />
+                  <p class="validation-error">Please Enter name and comment to submit</p>
                   <input id="btn-save-comment" type="button" value="Comment" />
                 </form>
               </div>
@@ -43,3 +44,15 @@ export const commentPopup = (totalFoodies) => {
     });
   });
 };
+const form = (element) => {
+  element.preventDefault();
+  const visitor = document.querySelector('#visitor').value;
+  const comment = document.querySelector('#comment').value;
+
+  if (visitor === '' || comment === '') {
+    document.querySelector('.validation-error').style.display = 'block';
+  } else {
+    document.querySelector('.validation-error').style.display = 'none';
+  }
+};
+export default form;
