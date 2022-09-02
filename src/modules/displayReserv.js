@@ -1,18 +1,24 @@
 const foodContaier = document.querySelector('.card-container');
 import {getSc,postScore} from './getPostReserv.js';
 const ids = [52772, 52953, 52853, 52870, 52765, 52813];
-export const displayReserv =(index)=>{
-   const gets=getSc(ids[index]);
+
+
+export const displayReserv = async (index)=>{
+   const gets= await getSc(ids[index]);
    console.log(gets);
-   gets.result.forEach((item)=>/\{
-     // console.log(item);
-     foodContaier.innerHTML+=`<div class="displayReserv"><h1>Reservations</h1> <p>${item[0].date_start} - ${item[0].date_end} by ${item[0].username}</p> </div>`
+   const reservation = document.createElement('div');
+   reservation.classList="displayReserv";
+   const header=document.createElement('h3');
+   header.innerHTML="Reservations";
+   reservation.appendChild(header);
+   foodContaier.appendChild(reservation);
+   gets.forEach((item)=>{
+     console.log(item);
+     reservation.innerHTML+=`<p>${item.date_start} - ${item.date_end} by ${item.username}</p>`;
    })
 }
-
 export const addReserv =(index) =>{
-
-   foodContaier.innerHTML+=`<h2> Add Reservation</h2><form class="theform" action="">
+   foodContaier.innerHTML+=`<h2 class="reser"> Add Reservation</h2><form class="theform" action="">
   <label for="fname">Your name</label><br>
   <input type="text" id="fname" class="fname" -name="fname" value=""><br>
 

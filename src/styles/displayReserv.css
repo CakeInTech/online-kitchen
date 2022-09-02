@@ -4,8 +4,13 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding: 3%;
+  padding: 5%;
 }
 .theform{
-  align-content: center;
+  display: grid;
+place-items: center
+}
+.reser{
+  padding-top: 3%;
+  text-align: center;
 }

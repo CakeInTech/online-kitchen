@@ -19,8 +19,8 @@ export const revervationPopup = (totalFoodies) => {
             </div>
         </div>
       `;
-      addReserv(index);
       displayReserv(index);
+      addReserv(index);
     });
   });
 };

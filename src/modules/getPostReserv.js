@@ -4,7 +4,7 @@ export const getSc = async (ids) => {
 
    const getPath = `?item_id=${ids}`;
    const furl = await fetch(`${url}${getPath}`);
-  const res = await furl.text();
+  const res = await furl.json();
   return res;
 };
 
