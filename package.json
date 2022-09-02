@@ -1,7 +1,7 @@
 {
-  "name": "to-do-list",
+  "name": "online-kitchen",
   "version": "1.0.0",
-  "description": "A basic to-do lists",
+  "description": "An online kitchen for recipes of meals",
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tinatsina/to-do-list.git"
+    "url": "git+https://github.com/tinatsina/online-kitchen.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tinatsina/to-do-list/issues"
+    "url": "https://github.com/tinatsina/online-kitchen/issues"
   },
-  "homepage": "https://github.com/tinatsina/to-do-list",
+  "homepage": "https://github.com/tinatsina/online-kitchen",
   "devDependencies": {
     "@babel/core": "^7.18.10",
     "@babel/preset-env": "^7.18.10",
