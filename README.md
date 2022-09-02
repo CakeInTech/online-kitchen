@@ -17,9 +17,9 @@
 > The live deploment of this website can seen via the 'npm' ***gh-pages*** view \
 > The deployment will be a simple foodies webapp \
 
-## [Live Demo Link](https://tinatsina.github.io/to-do-list/)
+## [Live Demo Link](https://tinatsina.github.io/online-kitchen/)
 
-## Image here <------>
+![Image of recipes here](/src/images/recipes.jpg)
 
 ## Getting Started
 
