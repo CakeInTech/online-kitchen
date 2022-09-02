@@ -1,5 +1,6 @@
+import { displayReserv, addReserv } from './displayReserv.js';
+
 const foodContaier = document.querySelector('.card-container');
-import {displayReserv,addReserv} from './displayReserv.js';
 
 export const revervationPopup = (totalFoodies) => {
   const reset = document.querySelectorAll('.reservation-btn');

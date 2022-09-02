@@ -1,4 +1,4 @@
-.displayReserv{
+.displayReserv {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,11 +6,13 @@
   align-content: center;
   padding: 5%;
 }
-.theform{
+
+.theform {
   display: grid;
-place-items: center
+  place-items: center;
 }
-.reser{
+
+.reser {
   padding-top: 3%;
   text-align: center;
 }
