@@ -1,3 +1,5 @@
+import { displayReserv, addReserv } from './displayReserv.js';
+
 const foodContaier = document.querySelector('.card-container');
 
 export const revervationPopup = (totalFoodies) => {
@@ -18,6 +20,8 @@ export const revervationPopup = (totalFoodies) => {
             </div>
         </div>
       `;
+      displayReserv(index);
+      addReserv(index);
     });
   });
 };
