@@ -1,24 +1,38 @@
-.img-x {
+.revervation-card {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding: 1%;
+  flex-direction: column;
+  background: #1e2019;
+  border: 1px solid #e2c044;
+  border-radius: 1%;
+  padding: 20px 20px;
+  font-family: 'Libre Baskerville', serif;
+  height: 90vh;
+  z-index: 10;
+  color: #e2c044;
 }
 
-.rever-description {
-  text-align: center;
+.reserv-img {
+  width: 37.5rem;
+  height: 37.5rem;
+  border-radius: 1%;
+  border: #e2c044 1px solid;
 }
 
 .reser-button {
-  font-size: 50px;
-  margin: 0;
-  padding-right: 5%;
-}
-
-.resev-details {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-family: sans-serif;
+  color: #e2c044;
+  padding: 14px 20px;
+  background-color: #1e2019;
+  border-radius: 50%;
+  font-weight: 800;
+  cursor: pointer;
 }
 
 .reserv-img {
@@ -33,6 +47,12 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  
+ .img-x {
+  padding: 0;
+  height: 40vh;
+  overflow: hidden;
+
 }
 
 .displayReserv {

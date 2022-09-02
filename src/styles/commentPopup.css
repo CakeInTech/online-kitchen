@@ -45,6 +45,7 @@
   margin: 20px;
   padding: 12px;
   display: flex;
+  justify-content: center;
   gap: 200px;
 }
 
