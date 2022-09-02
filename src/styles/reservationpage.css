@@ -17,9 +17,10 @@
 
 .reserv-img {
   width: 37.5rem;
-  height: 37.5rem;
   border-radius: 1%;
   border: #e2c044 1px solid;
+  height: auto;
+  padding-right: 5%;
 }
 
 .reser-button {
@@ -35,11 +36,6 @@
   cursor: pointer;
 }
 
-.reserv-img {
-  height: auto;
-  padding-right: 5%;
-}
-
 .reservation-card {
   width: 80%;
   height: auto;
@@ -49,11 +45,10 @@
   align-content: center;
 }
 
- .img-x {
+.img-x {
   padding: 0;
   height: 40vh;
   overflow: hidden;
-
 }
 
 .displayReserv {
