@@ -35,8 +35,41 @@
   cursor: pointer;
 }
 
-.img-x {
+.reserv-img {
+  height: auto;
+  padding-right: 5%;
+}
+
+.reservation-card {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  
+ .img-x {
   padding: 0;
   height: 40vh;
   overflow: hidden;
+
+}
+
+.displayReserv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 5%;
+}
+
+.theform {
+  display: grid;
+  place-items: center;
+}
+
+.reser {
+  padding-top: 3%;
+  text-align: center;
 }
