@@ -1,13 +1,12 @@
-const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/XHc1LAodKdqAUny8iXY4/reservations/';
+const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/XHc1LAodKdqAUny8iXY4/comments';
 
-export const getSc = async (ids) => {
+export const getCm = async (ids) => {
   const getPath = `?item_id=${ids}`;
   const furl = await fetch(`${url}${getPath}`);
-  const res = await furl.json();
-  return res;
+  const com = await furl.json();
+  return com;
 };
-
-export const postScore = async (ids, name, sdate, edate) => {
+export const postCm = async (ids, name, cm) => {
   const response = await fetch(
     url,
     {
@@ -16,8 +15,7 @@ export const postScore = async (ids, name, sdate, edate) => {
       body: JSON.stringify({
         item_id: ids,
         username: name.value,
-        date_start: sdate.value,
-        date_end: edate.value,
+        comment: cm.value,
       }),
       headers: {
         'Content-type': 'application/json; charset= UTF-8',

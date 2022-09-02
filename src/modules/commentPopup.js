@@ -1,3 +1,5 @@
+import { addComment, displayComment } from './displayComment.js';
+
 const container = document.querySelector('.modal-container');
 
 export const commentPopup = (totalFoodies) => {
@@ -23,17 +25,14 @@ export const commentPopup = (totalFoodies) => {
                 <div class="popnav">
                  <a href="#" class="popnav-link">Add Comment</a>
                   <a href="#" class="popnav-link">See Comment</a>
-                </div>
-                <form>
-                  <input id="visitor" type="text" placeholder="Your name" />
-                  <input id="comment" type="text" placeholder="Your comments" />
-                  <input id="submitter" type="hidden" />
-                  <p class="validation-error">Please Enter name and comment to submit</p>
-                  <input id="btn-save-comment" type="button" value="Comment" />
-                </form>
+                </div> 
+                <div class="displayComments"></div>
+             
               </div>
             </div>
         `;
+      displayComment(index);
+      addComment(index);
       const reset = document.querySelectorAll('.comment-button');
       reset.forEach((btn) => {
         btn.addEventListener('click', () => {
@@ -44,15 +43,3 @@ export const commentPopup = (totalFoodies) => {
     });
   });
 };
-const form = (element) => {
-  element.preventDefault();
-  const visitor = document.querySelector('#visitor').value;
-  const comment = document.querySelector('#comment').value;
-
-  if (visitor === '' || comment === '') {
-    document.querySelector('.validation-error').style.display = 'block';
-  } else {
-    document.querySelector('.validation-error').style.display = 'none';
-  }
-};
-export default form;
