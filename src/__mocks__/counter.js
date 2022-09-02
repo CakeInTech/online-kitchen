@@ -1,4 +1,1 @@
-
-export const counter= async (gets)=>{
-  return gets.length
-}
+export const counter = async (gets) => gets.length;

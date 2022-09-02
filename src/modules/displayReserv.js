@@ -1,17 +1,17 @@
 import { getSc, postScore } from './getPostReserv.js';
-import {counter} from './displayItemsCounter.js';
+import { counter } from './displayItemsCounter.js';
+
 const foodContaier = document.querySelector('.card-container');
 const ids = [52772, 52953, 52853, 52870, 52765, 52813];
 
 export const displayReserv = async (index) => {
   const gets = await getSc(ids[index]);
-  console.log(gets);
   const reservation = document.createElement('div');
   reservation.classList = 'displayReserv';
   const header = document.createElement('h3');
   header.innerHTML = 'Reservations';
-//get number of reservations
-  counter(reservation,gets);
+  // get number of reservations
+  counter(reservation, gets);
 
   reservation.appendChild(header);
   foodContaier.appendChild(reservation);
