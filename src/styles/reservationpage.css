@@ -24,7 +24,6 @@
 .reserv-img {
   height: auto;
   padding-right: 5%;
-  width: 30%;
 }
 
 .reservation-card {
@@ -34,4 +33,23 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
+}
+
+.displayReserv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 5%;
+}
+
+.theform {
+  display: grid;
+  place-items: center;
+}
+
+.reser {
+  padding-top: 3%;
+  text-align: center;
 }
