@@ -22,6 +22,7 @@ export const revervationPopup = (totalFoodies) => {
       `;
       displayReserv(index);
       addReserv(index);
+
     });
   });
 };
