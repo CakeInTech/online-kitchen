@@ -1,18 +1,58 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.main-section {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+.serve {
+  align-self: center;
+  font-family: 'Kaushan Script', cursive;
+  letter-spacing: 2px;
+  font-weight: 400;
+  padding-top: 90px;
+  color: #444;
+  text-align: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  gap: 5%;
+  align-items: center;
+  padding: 50px 60px;
+}
+
+@media (max-width: 1400px) {
+  .card-container {
+    grid-template-columns: 2fr 2fr 2fr;
+  }
+}
+
 .food-card {
-  width: 20%;
-  display: inline-block;
-  margin: 6%;
+  background-color: #f7f7f9;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   margin-bottom: 0;
   margin-top: 0;
+  padding: 20px;
 }
 
 .food-card > img {
   width: 100%;
+  border-radius: 50%;
 }
 
 .food-description {
   display: inline-block;
   width: 75%;
+  font-family: cursive;
+  color: #444;
+  font-size: medium;
 }
 
 .food-details-flex {
@@ -22,7 +62,9 @@
 
 .like-icon-counter {
   width: 25%;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  font-family: 'kaushan script', cursive;
 }
 
 .like-button,
@@ -30,9 +72,15 @@
   text-align: center;
 }
 
+.like-counter {
+  font-size: x-large;
+  color: #587b7f;
+}
+
 .like-button {
   display: block;
-  margin-top: 1em;
+  margin: 0.25em;
+  cursor: pointer;
 }
 
 .popup-buttons {
@@ -40,5 +88,44 @@
   width: 50%;
   display: block;
   height: 3em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+}
+
+.like-icon {
+  color: #587b7f;
+  transition: 1s ease;
+}
+
+.like-icon:hover {
+  color: red;
+  transform: scale(1.2);
+  transition: 0.5s ease;
+}
+
+.comments-reservations {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.btn-hover {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: cursive;
+  color: #587b7f;
+  cursor: pointer;
+  height: 55px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  opacity: 1;
+  transition: 1s ease;
+}
+
+.btn-hover:hover {
+  opacity: 0.5;
+  color: red;
+  transform: scale(1.1);
+  transition: 0.5s ease;
 }
