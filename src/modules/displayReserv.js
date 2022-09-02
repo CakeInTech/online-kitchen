@@ -4,10 +4,10 @@ const ids = [52772, 52953, 52853, 52870, 52765, 52813];
 export const displayReserv =(index)=>{
    const gets=getSc(ids[index]);
    console.log(gets);
-   // gets.forEach((item)=>/\{
+   gets.result.forEach((item)=>/\{
      // console.log(item);
-     foodContaier.innerHTML+=`<div class="displayReserv"><h1>Reservations</h1> <p>${gets[0].date_start} - ${gets[0].date_end} by ${gets[0].username}</p> </div>`
-   // })
+     foodContaier.innerHTML+=`<div class="displayReserv"><h1>Reservations</h1> <p>${item[0].date_start} - ${item[0].date_end} by ${item[0].username}</p> </div>`
+   })
 }
 
 export const addReserv =(index) =>{
