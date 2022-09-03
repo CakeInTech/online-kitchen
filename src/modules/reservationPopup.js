@@ -1,7 +1,6 @@
 import { displayReserv, addReserv } from './displayReserv.js';
 
 const foodContaier = document.querySelector('.modal-container');
-
 export const revervationPopup = (totalFoodies) => {
   const reset = document.querySelectorAll('.reservation-btn');
   const overflow = document.querySelector('.overflow');
@@ -24,6 +23,7 @@ export const revervationPopup = (totalFoodies) => {
       `;
       displayReserv(index);
       addReserv(index);
+
       const reset = document.querySelectorAll('.comment-button');
       reset.forEach((btn) => {
         btn.addEventListener('click', () => {

@@ -6,18 +6,16 @@ const ids = [52772, 52953, 52853, 52870, 52765, 52813];
 export const displayReserv = async (index) => {
   const foodContaier = document.querySelector('.card-container1');
   const gets = await getSc(ids[index]);
+
   const reservation = document.createElement('div');
   reservation.classList = 'displayReserv';
-  const header = document.createElement('h3');
-  header.innerHTML = 'Reservations';
   // get number of reservations
   counter(reservation, gets);
 
-  reservation.appendChild(header);
-  foodContaier.appendChild(reservation);
   gets.forEach((item) => {
     reservation.innerHTML += `<p>${item.date_start} - ${item.date_end} by ${item.username}</p>`;
   });
+  foodContaier.appendChild(reservation);
 };
 export const addReserv = (index) => {
   const foodContaier = document.querySelector('.card-container1');
@@ -38,8 +36,16 @@ export const addReserv = (index) => {
   const name = document.querySelector('.fname');
   const startdate = document.querySelector('.sdate');
   const enddate = document.querySelector('.edate');
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    postScore(ids[index], name, startdate, enddate);
+    await postScore(ids[index], name, startdate, enddate);
+    const gets = await getSc(ids[index]);
+    const toUpdate = e.target.parentNode.childNodes[3];
+    toUpdate.innerHTML = '';
+    gets.forEach((item) => {
+      toUpdate.innerHTML += `<p>${item.date_start} - ${item.date_end} by ${item.username}</p>`;
+    });
   });
+
+  // updateCont.innerHTML='';
 };
