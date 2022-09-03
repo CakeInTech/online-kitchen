@@ -6,14 +6,20 @@ const likeButtonsListener = () => {
   likeButtons.forEach((item) => {
     item.addEventListener('click', () => {
       // When menu is loaded call an async function to post likes
-      setLikes(item.getAttribute('id'));
+      if (setLikes(item.getAttribute('id')) !== null) {
+        // Update the local update to match the JSON database
+        const currentLikeValue = item.nextSibling.nextElementSibling.textContent;
+        const currentLikeObject = item.nextSibling.nextElementSibling;
 
-      // Update the local update to match the JSON database
-      const currentLikeValue = item.nextSibling.nextElementSibling.textContent;
-      const currentLikeObject = item.nextSibling.nextElementSibling;
+        // Update the like value offliine as well
+        currentLikeObject.innerHTML = (parseInt(currentLikeValue, 10) + 1);
+      } else {
+        // Update the local update to match the JSON database
+        const currentLikeObject = item.nextSibling.nextElementSibling;
 
-      // Update the like value offliine as well
-      currentLikeObject.innerHTML = (parseInt(currentLikeValue, 10) + 1);
+        // Displaye error if not resolved
+        currentLikeObject.innerHTML = 'X';
+      }
     });
   });
 };

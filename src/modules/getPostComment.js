@@ -2,9 +2,13 @@ const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/
 
 export const getCm = async (ids) => {
   const getPath = `?item_id=${ids}`;
-  const furl = await fetch(`${url}${getPath}`);
-  const com = await furl.json();
-  return com;
+  try {
+    const furl = await fetch(`${url}${getPath}`);
+    const com = await furl.json();
+    return com;
+  } catch (error) {
+    return error;
+  }
 };
 export const postCm = async (ids, name, cm) => {
   const response = await fetch(

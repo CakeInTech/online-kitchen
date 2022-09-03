@@ -11,9 +11,13 @@ const foodContaier = document.querySelector('.card-container');
 const displayMainPage = async () => {
   // Single Promise Execution
   const promises = foodArray.map(async (foodID) => {
-    const response = await fetch(BASE_URL + foodID);
-    const json = await response.json();
-    return json.meals;
+    try {
+      const response = await fetch(BASE_URL + foodID);
+      const json = await response.json();
+      return json.meals;
+    } catch (error) {
+      return null;
+    }
   });
 
   const totalLikes = await getLikes();

@@ -52,7 +52,8 @@
 }
 
 .displayReserv {
-  display: flex;
+  display: inline-block;
+  width: 49%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -61,8 +62,9 @@
 }
 
 .theform {
-  display: grid;
+  display: inline-block;
   place-items: center;
+  width: 49%;
 }
 
 .reser {
