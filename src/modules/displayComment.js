@@ -6,7 +6,7 @@ export const displayComment = async (index) => {
   const foodContaier = document.querySelector('.displayComments');
   const gets = await getCm(ids[index]);
   const comment = document.createElement('div');
-  comment.classList = 'displaycomment';
+  comment.classList = 'displaycmt';
   foodContaier.appendChild(comment);
   gets.forEach((item) => {
     comment.innerHTML += `<p>${item.username} - ${item.comment}</p>`;

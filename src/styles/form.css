@@ -1,4 +1,35 @@
+.displayComments {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
 .cmForm {
   margin: 0;
-  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.cmForm input[type="submit"] {
+  background-color: #e2c044;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.displaycmt {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: #e2c044 1px solid;
+  overflow: scroll;
+  height: 40vh;
+}
+
+.displaycmt p {
+  padding: 10px 20px;
+}
+
+.displaycmt p:nth-of-type(even) {
+  background-color: #e2c044;
+  color: #444;
 }
