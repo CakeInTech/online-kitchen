@@ -4,7 +4,7 @@ import { counter } from './displayItemsCounter.js';
 const ids = [52772, 52953, 52853, 52870, 52765, 52813];
 
 export const displayReserv = async (index) => {
-  try{
+  try {
     const foodContaier = document.querySelector('.card-container1');
     const gets = await getSc(ids[index]);
 
@@ -17,8 +17,8 @@ export const displayReserv = async (index) => {
       reservation.innerHTML += `<p>${item.date_start} - ${item.date_end} by ${item.username}</p>`;
     });
     foodContaier.appendChild(reservation);
-  }catch (error){
-    console.error(" No reservation",error.message);
+  } catch (error) {
+    console.error(' No reservation', error.message);
   }
 };
 export const addReserv = (index) => {
