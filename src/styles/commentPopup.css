@@ -54,22 +54,6 @@
   font-family: sans-serif;
 }
 
-.former {
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  height: 40vh;
-}
-
-.former form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 60px;
-  gap: 20px;
-}
-
 input[type="text"] {
   padding: 10px 20px;
 }

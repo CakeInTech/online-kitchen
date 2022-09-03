@@ -27,7 +27,3 @@ export const postScore = async (ids, name, sdate, edate) => {
   const result = await response.text();
   return result;
 };
-// const result= postScore();
-// console.log(result);
-// const results= getSc();
-// console.log(results);
