@@ -10,4 +10,11 @@ export const counter = (reservation, gets) => {
   reservation.appendChild(counter);
 };
 
+export const counter2 = (comments, gets) => {
+  const counter = document.createElement('p');
+  counter.classList = 'counters';
+  counter.innerHTML += `( ${gets.length} )`;
+  comments.appendChild(counter);
+};
+
 export default displayItemsCounter;

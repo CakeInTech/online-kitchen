@@ -1,4 +1,5 @@
 import { getCm, postCm } from './getPostComment.js';
+import { counter2 } from './displayItemsCounter.js';
 
 const ids = [52772, 52953, 52853, 52870, 52765, 52813];
 
@@ -7,6 +8,8 @@ export const displayComment = async (index) => {
   const gets = await getCm(ids[index]);
   const comment = document.createElement('div');
   comment.classList = 'displaycmt';
+  // get number of comments
+  counter2(comment, gets);
   foodContaier.appendChild(comment);
   gets.forEach((item) => {
     comment.innerHTML += `<p>${item.username} - ${item.comment}</p>`;
