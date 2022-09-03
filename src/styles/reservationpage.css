@@ -47,7 +47,8 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  
+}
+
  .img-x {
   padding: 0;
   height: 40vh;

@@ -1,7 +1,6 @@
 import { getSc, postScore } from './getPostReserv.js';
 import { counter } from './displayItemsCounter.js';
 
-
 const ids = [52772, 52953, 52853, 52870, 52765, 52813];
 
 export const displayReserv = async (index) => {
