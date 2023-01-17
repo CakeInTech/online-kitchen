@@ -2,7 +2,7 @@
 
 # Online Restaurant (Bon Appetite)
 
-> Food recipe website for searching ingridients and also a database of food information. You can look at the ingridients and also cooking reipes and the main ingridients
+> An intuitive online platform for discovering delicious recipes and mastering the art of cooking. Explore a wide variety of cuisines, filter by dietary restrictions, and access step-by-step instructions and cooking tips to elevate your culinary skills.
 
 ## Built With
 
